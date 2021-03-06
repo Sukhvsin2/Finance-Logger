@@ -1,16 +1,16 @@
 "use strict";
 // functions
-var circ = function (diameter) {
+const circ = (diameter) => {
     return diameter * Math.PI;
 };
 console.log(circ(10));
 // Arrays
-var names = ['name1', 'name2'];
+let names = ['name1', 'name2'];
 names.push('name3');
 // Error because of type is not same
 // names.push(1);
 // Objects
-var object = {
+let object = {
     name: "Sukh",
     age: 20
 };
@@ -39,9 +39,9 @@ object = {
  *
 **/
 // explicit types
-var character;
-var age;
-var isLoggedIn;
+let character;
+let age;
+let isLoggedIn;
 // Error because the type won't match
 // age = 'as'
 age = 69;
@@ -49,7 +49,7 @@ isLoggedIn = true;
 character = 'Check these are characters';
 // arrays
 // let arr: string[];
-var arr = [];
+let arr = [];
 // Error because it's string array
 // arr.push(34);
 // Correct but, error cause of not init array. If arr: string is not equals []
@@ -59,18 +59,18 @@ arr.push('S3');
 arr.push('S4');
 arr = ['String1', 'String2', 'String3'];
 // union types
-var mixed = [];
+let mixed = [];
 mixed.push('Check String');
 mixed.push(69);
 // Error because we've not specify the boolean value
 // mixed.push(true);
-var uid;
+let uid;
 uid = '123';
 uid = 123;
 // Error
 // uid = false
 // objects
-var sukh;
+let sukh;
 sukh = {
     name: 'Sukh',
     age: 69,
@@ -78,7 +78,7 @@ sukh = {
 };
 // Correct because array could be considered as an object in TS
 sukh = [];
-var Sukh;
+let Sukh;
 Sukh = {
     name: 'Sukh',
     class: 'TS-400',
@@ -86,22 +86,22 @@ Sukh = {
     // check: 'noo'
 };
 // Dynamic data type ANY
-var data = 25;
+let data = 25;
 data = '123';
 data = true;
 data = 4.5;
 data = { name: 'checkName' };
 data = ['hey'];
-var arr2 = [];
+let arr2 = [];
 arr2.push(23);
 arr2.push('23');
 arr2.push(['hey2']);
 arr2.push({ name: 'NameCheck' });
 console.log(arr2);
-var object3;
+let object3;
 // function in use
 // ? -> for the optional use of that parameter
-var greet = function (a, b, c) {
+let greet = (a, b, c) => {
     console.log('Hellow');
 };
 greet(1, 2);
