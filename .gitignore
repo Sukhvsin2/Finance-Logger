@@ -1,4 +1,5 @@
 .vscode
 .scss
 /.sass
-dist
+dist/
+/dist
