@@ -16,7 +16,6 @@ const ul = document.querySelector('ul')!;
 
 const listTemplate = new ListTemplate(ul);
 
-
 form.addEventListener('submit', (e: Event) => {
     e.preventDefault();
 
